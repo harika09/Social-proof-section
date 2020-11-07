@@ -2,6 +2,6 @@
 Frontend Mentor Challenge
 
 
-link: 
+link:  https://social-proof-sections.netlify.app/
 
 Build: Html5 and CSS3
