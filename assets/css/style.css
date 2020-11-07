@@ -159,6 +159,10 @@ body{
     top: 30px
 }
 
+.challenge{
+    padding-top: 100px;
+    text-align: center;
+}
 
 
 
@@ -223,6 +227,10 @@ body{
         grid-template-columns: 1fr;
        
     }
+    
+    .challenge{
+        padding-bottom: 50px;
+    }
 }
 
 @media screen and (max-width: 600px){
@@ -275,6 +283,12 @@ body{
 
     .rate{
         margin-left: 0;
+    }
+    
+    .challenge{
+        font-size: 10px;
+        font-weight: 600;
+        padding-bottom: 50px;
     }
    
 }
