@@ -31,7 +31,7 @@ body{
     position: absolute;
     margin-left: -250px;
     left: 45%;
-    bottom: 0px
+    top: 180px
 }
 
 /* Top Text */
@@ -159,6 +159,7 @@ body{
     top: 30px
 }
 
+
 .challenge{
     padding-top: 100px;
     text-align: center;
@@ -167,12 +168,13 @@ body{
 
 
 
-@media screen and (max-width: 1200px){
+
+@media screen and (max-width: 1024px){
     body{
-        background: url(/assets/img/bg-pattern-bottom-mobile.svg) no-repeat bottom;
+        background: url(/assets/img/bg-pattern-top-mobile.svg) no-repeat top left;
+        background-position: 0px 0px;
     }
     .social{
-       background: url(/assets/img/bg-pattern-top-mobile.svg) no-repeat top;
         padding: 50px 120px;
     }
 
@@ -227,15 +229,20 @@ body{
         grid-template-columns: 1fr;
        
     }
-    
+
     .challenge{
         padding-bottom: 50px;
     }
 }
 
 @media screen and (max-width: 600px){
+
+    body{
+        background: url(/assets/img/bg-pattern-top-mobile.svg) no-repeat top right;
+        background-position: 0px 0px;
+    }
     .social{
-        padding: 10px 20px;
+        padding: 10px 30px;
     }
     
     .social__container{
@@ -254,7 +261,7 @@ body{
 
     /* Top Container Text */
     .big__text{
-        font-size: 2rem;
+        font-size: 1.8rem;
         text-align: center;
         font-weight: 700;
   
@@ -279,40 +286,19 @@ body{
 
     .social__container .stars{
         margin-right: 0;
+        font-size: 2rem;
     }
 
     .rate{
         margin-left: 0;
+        font-size: .8rem;
     }
-    
+   
     .challenge{
         font-size: 10px;
         font-weight: 600;
         padding-bottom: 50px;
     }
-   
 }
 
 
-@media (min-width: 540px) and (max-width: 550px){
-    .ratings{
-        padding: 2rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-@media (min-width:411px) and (max-width:427px) {
-
-    .ratings{
-        padding: 2rem;
-        display: flex;
-        flex-direction: column;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: center;
-    }
-    
- }
