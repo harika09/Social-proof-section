@@ -12,6 +12,7 @@ body{
 /* Padding top-bottom and left-right */
 .social{
     padding: 10px 50px;
+    max-width: 100vw;
    
 }
 
