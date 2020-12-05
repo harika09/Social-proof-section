@@ -8,20 +8,26 @@
 body{
     margin: 0;
     padding: 0;
+    background: url(/assets/img/bg-pattern-bottom-desktop.svg) no-repeat left bottom;
+    background-size: contain;
+}
+
+/* Layout */
+.bd-container{
+    max-width: 1334px;
+    margin-right: 1rem;
+    margin-left: 1rem;
 }
 /* Padding top-bottom and left-right */
 .social{
     padding: 10px 50px;
-    max-width: 100vw;
-   
+    min-height: 100vh;
 }
 
 /* Font */
 .top__container h1, .star__container p{
     color: #502050;
 }
-
-
 
 /* Top Image*/
 .top__img{
@@ -30,9 +36,8 @@ body{
 /* bottom Image*/
 .img__bottom{
     position: absolute;
-    margin-left: -250px;
     left: 45%;
-    top: 180px
+    top: 280px;
 }
 
 /* Top Text */
@@ -52,7 +57,6 @@ body{
 
 .social__container{
     position: relative;
-    width: 100%;
     display: flex;
     justify-content: space-between;
     padding-bottom: 200px;
@@ -77,7 +81,7 @@ body{
 }
 
 .ratings{
-    padding: 10px 20px;
+    padding: 20px 20px;
     background-color:#f7f2f7;
     border-radius: .5rem;
     width: 500px;
@@ -110,6 +114,7 @@ body{
     display: grid;
     grid-gap: 30px;
     grid-template-columns: 1fr 1fr 1fr;
+   
 }
 
 .testimonials1, .testimonials2, .testimonials3{
@@ -302,4 +307,9 @@ body{
     }
 }
 
-
+@media screen and (min-width: 1334px){
+    .bd-container{
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
